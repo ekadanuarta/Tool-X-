@@ -1,0 +1,24 @@
+            - name: Lightstep Services Change Report
+  # You may pin to the exact commit or the version.
+  # uses: lightstep/lightstep-action-snapshot@166ec5f31d611858ebe9ed3437848e8fe675fb89
+  uses: lightstep/lightstep-action-snapshot@v0.2.1
+  with:
+    # The organization associated with your Lightstep account (usually your company name)
+    lightstep_organization: # optional
+    # The Lightstep project associated with this repository
+    lightstep_project: # optional
+    # Only show services in the snapshot from this comma-separated list
+    lightstep_service_filter: # optional
+    # The query to use when taking a snapshot
+    lightstep_snapshot_query: # optional
+    # The Lightstep snapshot id to summarize
+    lightstep_snapshot_id: # optional
+    # The Lightstep snapshot id to compare with lightstep_snapshot_id
+    lightstep_snapshot_compare_id: # optional
+    # The key to access the Lightstep Public API
+    lightstep_api_key: # optional
+    # Github API Token
+    github_token: # optional
+    # If set to true, will not add a comment to pull-requests
+    disable_comment: # optional
+          
